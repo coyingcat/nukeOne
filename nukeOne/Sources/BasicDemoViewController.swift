@@ -73,7 +73,7 @@ class BasicDemoViewController: UICollectionViewController, ImagePipelineSettings
         let request = makeRequest(with: photos[indexPath.row], cellSize: cell.bounds.size)
         var options = makeImageLoadingOptions()
         options.pipeline = self.pipeline
-        globalLoadImage(with: request, options: options, into: imageView)
+        loadImage(with: request, options: options, into: imageView)
 
         return cell
     }
