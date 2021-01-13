@@ -262,7 +262,6 @@ public extension ImagePipeline {
             dataCache.removeData(for: request.makeCacheKeyForFinalImageData())
         }
 
-        configuration.dataLoader.removeData(for: request.urlRequest)
     }
 }
 // MARK: - Starting Image Tasks (Private)

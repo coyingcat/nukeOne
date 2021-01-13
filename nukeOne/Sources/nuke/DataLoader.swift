@@ -17,8 +17,6 @@ public protocol DataLoading {
                   didReceiveData: @escaping (Data, URLResponse) -> Void,
                   completion: @escaping (Error?) -> Void) -> Cancellable
 
-    /// Removes data for the given request.
-    func removeData(for request: URLRequest)
 }
 
 extension URLSessionTask: Cancellable {}
