@@ -3,7 +3,7 @@
 // Copyright (c) 2015-2020 Alexander Grebenyuk (github.com/kean).
 
 import UIKit
-import Nuke
+
 
 private let cellReuseID = "reuseID"
 private var loggingEnabled = false

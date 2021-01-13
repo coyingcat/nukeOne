@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Nuke
+
 import SwiftSVG
 
 final class SwiftSVGDemoViewController: UIViewController {

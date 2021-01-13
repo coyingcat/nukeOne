@@ -3,7 +3,7 @@
 // Copyright (c) 2015-2020 Alexander Grebenyuk (github.com/kean).
 
 import UIKit
-import Nuke
+
 import Gifu
 
 // MARK: - AnimatedImageViewController
@@ -134,7 +134,7 @@ private final class AnimatedImageCell: UICollectionViewCell {
         }
     }
 
-    private func display(_ container: Nuke.ImageContainer) {
+    private func display(_ container: ImageContainer) {
         if let data = container.data {
             imageView.animate(withGIFData: data)
         } else {

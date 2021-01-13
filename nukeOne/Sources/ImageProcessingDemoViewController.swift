@@ -3,7 +3,7 @@
 // Copyright (c) 2015-2020 Alexander Grebenyuk (github.com/kean).
 
 import UIKit
-import Nuke
+
 
 final class ImageProcessingDemoViewController: UIViewController, ImagePipelineSettingsViewControllerDelegate {
     private var pipeline = ImagePipeline.shared
@@ -113,7 +113,7 @@ final class ImageProcessingDemoViewController: UIViewController, ImagePipelineSe
         var options = ImageLoadingOptions(transition: .fadeIn(duration: 0.5))
         options.pipeline = pipeline
 
-        Nuke.loadImage(with: request, options: options, into: view.imageView)
+        globalLoadImage(with: request, options: options, into: view.imageView)
     }
 
     // MARK: - Actions

@@ -3,7 +3,7 @@
 // Copyright (c) 2015-2020 Alexander Grebenyuk (github.com/kean).
 
 import UIKit
-import Nuke
+
 import Alamofire
 
 final class AlamofireIntegrationDemoViewController: BasicDemoViewController {
@@ -18,7 +18,7 @@ final class AlamofireIntegrationDemoViewController: BasicDemoViewController {
 }
 
 /// Implements data loading using Alamofire framework.
-public class AlamofireDataLoader: Nuke.DataLoading {
+public class AlamofireDataLoader: DataLoading {
     public let session: Alamofire.Session
 
     /// Initializes the receiver with a given Alamofire.SessionManager.
@@ -51,7 +51,7 @@ public class AlamofireDataLoader: Nuke.DataLoading {
     }
 }
 
-private final class AnyCancellable: Nuke.Cancellable {
+private final class AnyCancellable: Cancellable {
     let closure: () -> Void
 
     init(_ closure: @escaping () -> Void) {

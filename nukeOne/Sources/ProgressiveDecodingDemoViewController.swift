@@ -3,7 +3,7 @@
 // Copyright (c) 2015-2020 Alexander Grebenyuk (github.com/kean).
 
 import UIKit
-import Nuke
+
 
 final class ProgressiveDecodingDemoViewController: UIViewController {
     private let urls = [
@@ -64,7 +64,7 @@ final class ProgressiveDecodingDemoViewController: UIViewController {
         options.pipeline = pipeline
         options.transition = .fadeIn(duration: 0.25)
 
-        loadImage(
+        globalLoadImage(
             with: ImageRequest(url: url, processors: [_ProgressiveBlurImageProcessor()]),
             options: options,
             into: imageView,

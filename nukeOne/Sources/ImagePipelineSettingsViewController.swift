@@ -3,7 +3,7 @@
 // Copyright (c) 2015-2020 Alexander Grebenyuk (github.com/kean).
 
 import UIKit
-import Nuke
+
 
 protocol ImagePipelineSettingsViewControllerDelegate: class {
     func imagePipelineSettingsViewController(_ vc: ImagePipelineSettingsViewController, didFinishWithConfiguration configuration: ImagePipeline.Configuration)

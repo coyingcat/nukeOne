@@ -3,7 +3,7 @@
 // Copyright (c) 2015-2020 Alexander Grebenyuk (github.com/kean).
 
 import UIKit
-import Nuke
+
 
 /// A base view controller.
 class BasicDemoViewController: UICollectionViewController, ImagePipelineSettingsViewControllerDelegate {
@@ -73,7 +73,7 @@ class BasicDemoViewController: UICollectionViewController, ImagePipelineSettings
         let request = makeRequest(with: photos[indexPath.row], cellSize: cell.bounds.size)
         var options = makeImageLoadingOptions()
         options.pipeline = self.pipeline
-        loadImage(with: request, options: options, into: imageView)
+        globalLoadImage(with: request, options: options, into: imageView)
 
         return cell
     }
