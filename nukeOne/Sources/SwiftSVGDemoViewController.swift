@@ -27,8 +27,11 @@ final class SwiftSVGDemoViewController: UIViewController {
             return isSVG ? ImageDecoders.Empty() : nil
         }
 
-        let url = URL(string: "https://upload.wikimedia.org/wikipedia/commons/9/9d/Swift_logo.svg")!
-
+        var url = URL(string: "https://en.wikipedia.org/w/skins/Vector/resources/skins.vector.styles/images/arrow-down.svg")!
+        url = URL(string: "https://blog.hubspot.com/hubfs/svg-orange-circle.svg")!
+      //  url = URL(string: "https://blog.hubspot.com/hubfs/hs-logo-svg-example-blog-post.svg")!
+            
+            
         // If you know that all images downloaded by the pipeline are going to be SVG,
         // you can just call `loadData(with:)` instead and not register an Empty decoder.
         ImagePipeline.shared.loadImage(with: url) { [weak self] result in

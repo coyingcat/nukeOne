@@ -71,7 +71,7 @@ struct _ProgressiveBlurImageProcessor: ImageProcessing, Hashable {
 
 extension ImageContainer {
     /// Modifies the wrapped image and keeps all of the context.
-    func map(_ closure: (PlatformImage) -> PlatformImage?) -> ImageContainer? {
+    func map(transform closure: (PlatformImage) -> PlatformImage?) -> ImageContainer? {
         guard let image = closure(self.image) else {
             return nil
         }
