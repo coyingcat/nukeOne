@@ -26,20 +26,67 @@
 		0CCC18A8209EE341003D7172 /* AlamofireIntegrationDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCC18A7209EE341003D7172 /* AlamofireIntegrationDemoViewController.swift */; };
 		0CD878972431108200DE301A /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD878962431108200DE301A /* Images.swift */; };
 		0CE5F687215688590046609F /* PrefetchingDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5F686215688590046609F /* PrefetchingDemoViewController.swift */; };
-		268D171825AEC931000FF1D5 /* FrameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D170C25AEC931000FF1D5 /* FrameStore.swift */; };
-		268D171925AEC931000FF1D5 /* GIFAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D170D25AEC931000FF1D5 /* GIFAnimatable.swift */; };
-		268D171A25AEC931000FF1D5 /* AnimatedFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D170E25AEC931000FF1D5 /* AnimatedFrame.swift */; };
-		268D171B25AEC931000FF1D5 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D170F25AEC931000FF1D5 /* Animator.swift */; };
-		268D171C25AEC931000FF1D5 /* GIFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D171025AEC931000FF1D5 /* GIFImageView.swift */; };
-		268D171D25AEC931000FF1D5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D171225AEC931000FF1D5 /* Array.swift */; };
-		268D171E25AEC931000FF1D5 /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D171325AEC931000FF1D5 /* CGSize.swift */; };
-		268D171F25AEC931000FF1D5 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D171425AEC931000FF1D5 /* UIImage.swift */; };
-		268D172025AEC931000FF1D5 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D171525AEC931000FF1D5 /* UIImageView.swift */; };
-		268D172125AEC931000FF1D5 /* ImageSourceHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D171725AEC931000FF1D5 /* ImageSourceHelpers.swift */; };
+		268D173025AECA65000FF1D5 /* FrameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D172425AECA65000FF1D5 /* FrameStore.swift */; };
+		268D173125AECA65000FF1D5 /* GIFAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D172525AECA65000FF1D5 /* GIFAnimatable.swift */; };
+		268D173225AECA65000FF1D5 /* AnimatedFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D172625AECA65000FF1D5 /* AnimatedFrame.swift */; };
+		268D173325AECA65000FF1D5 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D172725AECA65000FF1D5 /* Animator.swift */; };
+		268D173425AECA65000FF1D5 /* GIFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D172825AECA65000FF1D5 /* GIFImageView.swift */; };
+		268D173525AECA65000FF1D5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D172A25AECA65000FF1D5 /* Array.swift */; };
+		268D173625AECA65000FF1D5 /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D172B25AECA65000FF1D5 /* CGSize.swift */; };
+		268D173725AECA65000FF1D5 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D172C25AECA65000FF1D5 /* UIImage.swift */; };
+		268D173825AECA65000FF1D5 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D172D25AECA65000FF1D5 /* UIImageView.swift */; };
+		268D173925AECA65000FF1D5 /* ImageSourceHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D172F25AECA65000FF1D5 /* ImageSourceHelpers.swift */; };
+		268D177425AECA87000FF1D5 /* SVGCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D173D25AECA87000FF1D5 /* SVGCache.swift */; };
+		268D177525AECA87000FF1D5 /* SVGParserSupportedElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D173F25AECA87000FF1D5 /* SVGParserSupportedElements.swift */; };
+		268D177625AECA87000FF1D5 /* NSXMLSVGParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D174025AECA87000FF1D5 /* NSXMLSVGParser.swift */; };
+		268D177725AECA87000FF1D5 /* SVGParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D174125AECA87000FF1D5 /* SVGParser.swift */; };
+		268D177825AECA87000FF1D5 /* Fillable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D174325AECA87000FF1D5 /* Fillable.swift */; };
+		268D177925AECA87000FF1D5 /* Transformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D174425AECA87000FF1D5 /* Transformable.swift */; };
+		268D177A25AECA87000FF1D5 /* Strokable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D174525AECA87000FF1D5 /* Strokable.swift */; };
+		268D177B25AECA87000FF1D5 /* Stylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D174625AECA87000FF1D5 /* Stylable.swift */; };
+		268D177C25AECA87000FF1D5 /* DelaysApplyingAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D174725AECA87000FF1D5 /* DelaysApplyingAttributes.swift */; };
+		268D177D25AECA87000FF1D5 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D174825AECA87000FF1D5 /* Identifiable.swift */; };
+		268D177E25AECA87000FF1D5 /* ParsesAsynchronously.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D174A25AECA87000FF1D5 /* ParsesAsynchronously.swift */; };
+		268D177F25AECA87000FF1D5 /* SVGPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D174B25AECA87000FF1D5 /* SVGPolygon.swift */; };
+		268D178025AECA87000FF1D5 /* SVGShapeElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D174C25AECA87000FF1D5 /* SVGShapeElement.swift */; };
+		268D178125AECA87000FF1D5 /* SVGLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D174D25AECA87000FF1D5 /* SVGLine.swift */; };
+		268D178225AECA87000FF1D5 /* SVGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D174E25AECA87000FF1D5 /* SVGPath.swift */; };
+		268D178325AECA87000FF1D5 /* SVGGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D174F25AECA87000FF1D5 /* SVGGroup.swift */; };
+		268D178425AECA87000FF1D5 /* SVGContainerElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D175025AECA87000FF1D5 /* SVGContainerElement.swift */; };
+		268D178525AECA87000FF1D5 /* SVGRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D175125AECA87000FF1D5 /* SVGRectangle.swift */; };
+		268D178625AECA87000FF1D5 /* SVGPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D175225AECA87000FF1D5 /* SVGPolyline.swift */; };
+		268D178725AECA87000FF1D5 /* SVGElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D175325AECA87000FF1D5 /* SVGElement.swift */; };
+		268D178825AECA87000FF1D5 /* SVGRootElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D175425AECA87000FF1D5 /* SVGRootElement.swift */; };
+		268D178925AECA87000FF1D5 /* SVGEllipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D175525AECA87000FF1D5 /* SVGEllipse.swift */; };
+		268D178A25AECA87000FF1D5 /* SVGCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D175625AECA87000FF1D5 /* SVGCircle.swift */; };
+		268D178B25AECA87000FF1D5 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D175825AECA87000FF1D5 /* Print.swift */; };
+		268D178C25AECA87000FF1D5 /* Unown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D175925AECA87000FF1D5 /* Unown.swift */; };
+		268D178D25AECA87000FF1D5 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D175A25AECA87000FF1D5 /* DispatchQueue+Extensions.swift */; };
+		268D178E25AECA87000FF1D5 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D175B25AECA87000FF1D5 /* Stack.swift */; };
+		268D178F25AECA87000FF1D5 /* FloatingPoint+DegreesRadians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D175C25AECA87000FF1D5 /* FloatingPoint+DegreesRadians.swift */; };
+		268D179025AECA87000FF1D5 /* Dictionary+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D175D25AECA87000FF1D5 /* Dictionary+Add.swift */; };
+		268D179125AECA87000FF1D5 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D175E25AECA87000FF1D5 /* UIColor+Extensions.swift */; };
+		268D179225AECA87000FF1D5 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D175F25AECA87000FF1D5 /* Dictionary+JSON.swift */; };
+		268D179325AECA87000FF1D5 /* cssColorNames.json in Resources */ = {isa = PBXBuildFile; fileRef = 268D176025AECA87000FF1D5 /* cssColorNames.json */; };
+		268D179425AECA87000FF1D5 /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D176125AECA87000FF1D5 /* String+Subscript.swift */; };
+		268D179525AECA87000FF1D5 /* CALayer+Sublayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D176225AECA87000FF1D5 /* CALayer+Sublayers.swift */; };
+		268D179625AECA87000FF1D5 /* BinaryFloatingPoint+ParseLengthString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D176325AECA87000FF1D5 /* BinaryFloatingPoint+ParseLengthString.swift */; };
+		268D179725AECA87000FF1D5 /* Data+CacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D176425AECA87000FF1D5 /* Data+CacheKey.swift */; };
+		268D179825AECA87000FF1D5 /* String+Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D176525AECA87000FF1D5 /* String+Trim.swift */; };
+		268D179925AECA87000FF1D5 /* Scalar+FromByteArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D176625AECA87000FF1D5 /* Scalar+FromByteArray.swift */; };
+		268D179A25AECA87000FF1D5 /* PathDLexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D176825AECA87000FF1D5 /* PathDLexer.swift */; };
+		268D179B25AECA87000FF1D5 /* PathCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D176925AECA87000FF1D5 /* PathCommand.swift */; };
+		268D179C25AECA87000FF1D5 /* CoordinateLexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D176A25AECA87000FF1D5 /* CoordinateLexer.swift */; };
+		268D179D25AECA87000FF1D5 /* SVGLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D176C25AECA87000FF1D5 /* SVGLayer.swift */; };
+		268D179E25AECA87000FF1D5 /* CAShapeLayer+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D176D25AECA87000FF1D5 /* CAShapeLayer+SVG.swift */; };
+		268D179F25AECA87000FF1D5 /* UIView+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D176E25AECA87000FF1D5 /* UIView+SVG.swift */; };
+		268D17A025AECA87000FF1D5 /* UIBezierPath+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D176F25AECA87000FF1D5 /* UIBezierPath+SVG.swift */; };
+		268D17A125AECA87000FF1D5 /* CALayer+SVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D177025AECA87000FF1D5 /* CALayer+SVG.swift */; };
+		268D17A225AECA87000FF1D5 /* SVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D177125AECA87000FF1D5 /* SVGView.swift */; };
+		268D17A325AECA87000FF1D5 /* NSBezierPath+CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D177225AECA87000FF1D5 /* NSBezierPath+CrossPlatform.swift */; };
+		268D17A425AECA87000FF1D5 /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D177325AECA87000FF1D5 /* CrossPlatform.swift */; };
 		2694321625AE96A2003DC5C3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2694321325AE966C003DC5C3 /* Alamofire.framework */; };
 		2694321725AE96A2003DC5C3 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2694321325AE966C003DC5C3 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2694321D25AE96A6003DC5C3 /* SwiftSVG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2694320625AE95A5003DC5C3 /* SwiftSVG.framework */; };
-		2694321E25AE96A6003DC5C3 /* SwiftSVG.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2694320625AE95A5003DC5C3 /* SwiftSVG.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2694324E25AEA4B8003DC5C3 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2694323F25AEA4B8003DC5C3 /* ImageCache.swift */; };
 		2694324F25AEA4B8003DC5C3 /* ImageTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2694324025AEA4B8003DC5C3 /* ImageTask.swift */; };
 		2694325025AEA4B8003DC5C3 /* ImagePipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2694324125AEA4B8003DC5C3 /* ImagePipeline.swift */; };
@@ -67,7 +114,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				2694321725AE96A2003DC5C3 /* Alamofire.framework in Embed Frameworks */,
-				2694321E25AE96A6003DC5C3 /* SwiftSVG.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,17 +143,65 @@
 		0CCC18A7209EE341003D7172 /* AlamofireIntegrationDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireIntegrationDemoViewController.swift; sourceTree = "<group>"; };
 		0CD878962431108200DE301A /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		0CE5F686215688590046609F /* PrefetchingDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefetchingDemoViewController.swift; sourceTree = "<group>"; };
-		268D170C25AEC931000FF1D5 /* FrameStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameStore.swift; sourceTree = "<group>"; };
-		268D170D25AEC931000FF1D5 /* GIFAnimatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFAnimatable.swift; sourceTree = "<group>"; };
-		268D170E25AEC931000FF1D5 /* AnimatedFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedFrame.swift; sourceTree = "<group>"; };
-		268D170F25AEC931000FF1D5 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
-		268D171025AEC931000FF1D5 /* GIFImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFImageView.swift; sourceTree = "<group>"; };
-		268D171225AEC931000FF1D5 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		268D171325AEC931000FF1D5 /* CGSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
-		268D171425AEC931000FF1D5 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
-		268D171525AEC931000FF1D5 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
-		268D171725AEC931000FF1D5 /* ImageSourceHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSourceHelpers.swift; sourceTree = "<group>"; };
-		2694320625AE95A5003DC5C3 /* SwiftSVG.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftSVG.framework; sourceTree = "<group>"; };
+		268D172425AECA65000FF1D5 /* FrameStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameStore.swift; sourceTree = "<group>"; };
+		268D172525AECA65000FF1D5 /* GIFAnimatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFAnimatable.swift; sourceTree = "<group>"; };
+		268D172625AECA65000FF1D5 /* AnimatedFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedFrame.swift; sourceTree = "<group>"; };
+		268D172725AECA65000FF1D5 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		268D172825AECA65000FF1D5 /* GIFImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFImageView.swift; sourceTree = "<group>"; };
+		268D172A25AECA65000FF1D5 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		268D172B25AECA65000FF1D5 /* CGSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
+		268D172C25AECA65000FF1D5 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		268D172D25AECA65000FF1D5 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		268D172F25AECA65000FF1D5 /* ImageSourceHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSourceHelpers.swift; sourceTree = "<group>"; };
+		268D173D25AECA87000FF1D5 /* SVGCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGCache.swift; sourceTree = "<group>"; };
+		268D173F25AECA87000FF1D5 /* SVGParserSupportedElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGParserSupportedElements.swift; sourceTree = "<group>"; };
+		268D174025AECA87000FF1D5 /* NSXMLSVGParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSXMLSVGParser.swift; sourceTree = "<group>"; };
+		268D174125AECA87000FF1D5 /* SVGParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGParser.swift; sourceTree = "<group>"; };
+		268D174325AECA87000FF1D5 /* Fillable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fillable.swift; sourceTree = "<group>"; };
+		268D174425AECA87000FF1D5 /* Transformable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transformable.swift; sourceTree = "<group>"; };
+		268D174525AECA87000FF1D5 /* Strokable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strokable.swift; sourceTree = "<group>"; };
+		268D174625AECA87000FF1D5 /* Stylable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylable.swift; sourceTree = "<group>"; };
+		268D174725AECA87000FF1D5 /* DelaysApplyingAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelaysApplyingAttributes.swift; sourceTree = "<group>"; };
+		268D174825AECA87000FF1D5 /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		268D174A25AECA87000FF1D5 /* ParsesAsynchronously.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsesAsynchronously.swift; sourceTree = "<group>"; };
+		268D174B25AECA87000FF1D5 /* SVGPolygon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGPolygon.swift; sourceTree = "<group>"; };
+		268D174C25AECA87000FF1D5 /* SVGShapeElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGShapeElement.swift; sourceTree = "<group>"; };
+		268D174D25AECA87000FF1D5 /* SVGLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGLine.swift; sourceTree = "<group>"; };
+		268D174E25AECA87000FF1D5 /* SVGPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGPath.swift; sourceTree = "<group>"; };
+		268D174F25AECA87000FF1D5 /* SVGGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGGroup.swift; sourceTree = "<group>"; };
+		268D175025AECA87000FF1D5 /* SVGContainerElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGContainerElement.swift; sourceTree = "<group>"; };
+		268D175125AECA87000FF1D5 /* SVGRectangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGRectangle.swift; sourceTree = "<group>"; };
+		268D175225AECA87000FF1D5 /* SVGPolyline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGPolyline.swift; sourceTree = "<group>"; };
+		268D175325AECA87000FF1D5 /* SVGElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGElement.swift; sourceTree = "<group>"; };
+		268D175425AECA87000FF1D5 /* SVGRootElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGRootElement.swift; sourceTree = "<group>"; };
+		268D175525AECA87000FF1D5 /* SVGEllipse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGEllipse.swift; sourceTree = "<group>"; };
+		268D175625AECA87000FF1D5 /* SVGCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGCircle.swift; sourceTree = "<group>"; };
+		268D175825AECA87000FF1D5 /* Print.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
+		268D175925AECA87000FF1D5 /* Unown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unown.swift; sourceTree = "<group>"; };
+		268D175A25AECA87000FF1D5 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
+		268D175B25AECA87000FF1D5 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		268D175C25AECA87000FF1D5 /* FloatingPoint+DegreesRadians.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+DegreesRadians.swift"; sourceTree = "<group>"; };
+		268D175D25AECA87000FF1D5 /* Dictionary+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Add.swift"; sourceTree = "<group>"; };
+		268D175E25AECA87000FF1D5 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		268D175F25AECA87000FF1D5 /* Dictionary+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSON.swift"; sourceTree = "<group>"; };
+		268D176025AECA87000FF1D5 /* cssColorNames.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cssColorNames.json; sourceTree = "<group>"; };
+		268D176125AECA87000FF1D5 /* String+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Subscript.swift"; sourceTree = "<group>"; };
+		268D176225AECA87000FF1D5 /* CALayer+Sublayers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Sublayers.swift"; sourceTree = "<group>"; };
+		268D176325AECA87000FF1D5 /* BinaryFloatingPoint+ParseLengthString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BinaryFloatingPoint+ParseLengthString.swift"; sourceTree = "<group>"; };
+		268D176425AECA87000FF1D5 /* Data+CacheKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+CacheKey.swift"; sourceTree = "<group>"; };
+		268D176525AECA87000FF1D5 /* String+Trim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Trim.swift"; sourceTree = "<group>"; };
+		268D176625AECA87000FF1D5 /* Scalar+FromByteArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Scalar+FromByteArray.swift"; sourceTree = "<group>"; };
+		268D176825AECA87000FF1D5 /* PathDLexer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathDLexer.swift; sourceTree = "<group>"; };
+		268D176925AECA87000FF1D5 /* PathCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathCommand.swift; sourceTree = "<group>"; };
+		268D176A25AECA87000FF1D5 /* CoordinateLexer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateLexer.swift; sourceTree = "<group>"; };
+		268D176C25AECA87000FF1D5 /* SVGLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGLayer.swift; sourceTree = "<group>"; };
+		268D176D25AECA87000FF1D5 /* CAShapeLayer+SVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAShapeLayer+SVG.swift"; sourceTree = "<group>"; };
+		268D176E25AECA87000FF1D5 /* UIView+SVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SVG.swift"; sourceTree = "<group>"; };
+		268D176F25AECA87000FF1D5 /* UIBezierPath+SVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+SVG.swift"; sourceTree = "<group>"; };
+		268D177025AECA87000FF1D5 /* CALayer+SVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+SVG.swift"; sourceTree = "<group>"; };
+		268D177125AECA87000FF1D5 /* SVGView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVGView.swift; sourceTree = "<group>"; };
+		268D177225AECA87000FF1D5 /* NSBezierPath+CrossPlatform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+CrossPlatform.swift"; sourceTree = "<group>"; };
+		268D177325AECA87000FF1D5 /* CrossPlatform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossPlatform.swift; sourceTree = "<group>"; };
 		2694321325AE966C003DC5C3 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		2694323F25AEA4B8003DC5C3 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		2694324025AEA4B8003DC5C3 /* ImageTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTask.swift; sourceTree = "<group>"; };
@@ -135,7 +229,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2694321625AE96A2003DC5C3 /* Alamofire.framework in Frameworks */,
-				2694321D25AE96A6003DC5C3 /* SwiftSVG.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +259,8 @@
 		0CCC1886209EDCCF003D7172 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				268D170A25AEC931000FF1D5 /* Gifu */,
+				268D173A25AECA87000FF1D5 /* SwiftSVG */,
+				268D172225AECA65000FF1D5 /* Gifu */,
 				2694323E25AEA4B8003DC5C3 /* nuke */,
 				0CCC188D209EDCCF003D7172 /* AppDelegate.swift */,
 				0CCC1892209EDCCF003D7172 /* MenuViewController.swift */,
@@ -196,45 +290,165 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		268D170A25AEC931000FF1D5 /* Gifu */ = {
+		268D172225AECA65000FF1D5 /* Gifu */ = {
 			isa = PBXGroup;
 			children = (
-				268D170B25AEC931000FF1D5 /* Classes */,
-				268D171125AEC931000FF1D5 /* Extensions */,
-				268D171625AEC931000FF1D5 /* Helpers */,
+				268D172325AECA65000FF1D5 /* Classes */,
+				268D172925AECA65000FF1D5 /* Extensions */,
+				268D172E25AECA65000FF1D5 /* Helpers */,
 			);
 			path = Gifu;
 			sourceTree = "<group>";
 		};
-		268D170B25AEC931000FF1D5 /* Classes */ = {
+		268D172325AECA65000FF1D5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				268D170C25AEC931000FF1D5 /* FrameStore.swift */,
-				268D170D25AEC931000FF1D5 /* GIFAnimatable.swift */,
-				268D170E25AEC931000FF1D5 /* AnimatedFrame.swift */,
-				268D170F25AEC931000FF1D5 /* Animator.swift */,
-				268D171025AEC931000FF1D5 /* GIFImageView.swift */,
+				268D172425AECA65000FF1D5 /* FrameStore.swift */,
+				268D172525AECA65000FF1D5 /* GIFAnimatable.swift */,
+				268D172625AECA65000FF1D5 /* AnimatedFrame.swift */,
+				268D172725AECA65000FF1D5 /* Animator.swift */,
+				268D172825AECA65000FF1D5 /* GIFImageView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		268D171125AEC931000FF1D5 /* Extensions */ = {
+		268D172925AECA65000FF1D5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				268D171225AEC931000FF1D5 /* Array.swift */,
-				268D171325AEC931000FF1D5 /* CGSize.swift */,
-				268D171425AEC931000FF1D5 /* UIImage.swift */,
-				268D171525AEC931000FF1D5 /* UIImageView.swift */,
+				268D172A25AECA65000FF1D5 /* Array.swift */,
+				268D172B25AECA65000FF1D5 /* CGSize.swift */,
+				268D172C25AECA65000FF1D5 /* UIImage.swift */,
+				268D172D25AECA65000FF1D5 /* UIImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		268D171625AEC931000FF1D5 /* Helpers */ = {
+		268D172E25AECA65000FF1D5 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				268D171725AEC931000FF1D5 /* ImageSourceHelpers.swift */,
+				268D172F25AECA65000FF1D5 /* ImageSourceHelpers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		268D173A25AECA87000FF1D5 /* SwiftSVG */ = {
+			isa = PBXGroup;
+			children = (
+				268D173B25AECA87000FF1D5 /* SVG */,
+				268D176B25AECA87000FF1D5 /* SVG Extensions */,
+				268D177225AECA87000FF1D5 /* NSBezierPath+CrossPlatform.swift */,
+				268D177325AECA87000FF1D5 /* CrossPlatform.swift */,
+			);
+			path = SwiftSVG;
+			sourceTree = "<group>";
+		};
+		268D173B25AECA87000FF1D5 /* SVG */ = {
+			isa = PBXGroup;
+			children = (
+				268D173C25AECA87000FF1D5 /* Cache */,
+				268D173E25AECA87000FF1D5 /* Parser */,
+				268D174225AECA87000FF1D5 /* Attributes */,
+				268D174925AECA87000FF1D5 /* Elements */,
+				268D175725AECA87000FF1D5 /* Helpers */,
+				268D176725AECA87000FF1D5 /* Iterators */,
+			);
+			path = SVG;
+			sourceTree = "<group>";
+		};
+		268D173C25AECA87000FF1D5 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				268D173D25AECA87000FF1D5 /* SVGCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		268D173E25AECA87000FF1D5 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				268D173F25AECA87000FF1D5 /* SVGParserSupportedElements.swift */,
+				268D174025AECA87000FF1D5 /* NSXMLSVGParser.swift */,
+				268D174125AECA87000FF1D5 /* SVGParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		268D174225AECA87000FF1D5 /* Attributes */ = {
+			isa = PBXGroup;
+			children = (
+				268D174325AECA87000FF1D5 /* Fillable.swift */,
+				268D174425AECA87000FF1D5 /* Transformable.swift */,
+				268D174525AECA87000FF1D5 /* Strokable.swift */,
+				268D174625AECA87000FF1D5 /* Stylable.swift */,
+				268D174725AECA87000FF1D5 /* DelaysApplyingAttributes.swift */,
+				268D174825AECA87000FF1D5 /* Identifiable.swift */,
+			);
+			path = Attributes;
+			sourceTree = "<group>";
+		};
+		268D174925AECA87000FF1D5 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				268D174A25AECA87000FF1D5 /* ParsesAsynchronously.swift */,
+				268D174B25AECA87000FF1D5 /* SVGPolygon.swift */,
+				268D174C25AECA87000FF1D5 /* SVGShapeElement.swift */,
+				268D174D25AECA87000FF1D5 /* SVGLine.swift */,
+				268D174E25AECA87000FF1D5 /* SVGPath.swift */,
+				268D174F25AECA87000FF1D5 /* SVGGroup.swift */,
+				268D175025AECA87000FF1D5 /* SVGContainerElement.swift */,
+				268D175125AECA87000FF1D5 /* SVGRectangle.swift */,
+				268D175225AECA87000FF1D5 /* SVGPolyline.swift */,
+				268D175325AECA87000FF1D5 /* SVGElement.swift */,
+				268D175425AECA87000FF1D5 /* SVGRootElement.swift */,
+				268D175525AECA87000FF1D5 /* SVGEllipse.swift */,
+				268D175625AECA87000FF1D5 /* SVGCircle.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		268D175725AECA87000FF1D5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				268D175825AECA87000FF1D5 /* Print.swift */,
+				268D175925AECA87000FF1D5 /* Unown.swift */,
+				268D175A25AECA87000FF1D5 /* DispatchQueue+Extensions.swift */,
+				268D175B25AECA87000FF1D5 /* Stack.swift */,
+				268D175C25AECA87000FF1D5 /* FloatingPoint+DegreesRadians.swift */,
+				268D175D25AECA87000FF1D5 /* Dictionary+Add.swift */,
+				268D175E25AECA87000FF1D5 /* UIColor+Extensions.swift */,
+				268D175F25AECA87000FF1D5 /* Dictionary+JSON.swift */,
+				268D176025AECA87000FF1D5 /* cssColorNames.json */,
+				268D176125AECA87000FF1D5 /* String+Subscript.swift */,
+				268D176225AECA87000FF1D5 /* CALayer+Sublayers.swift */,
+				268D176325AECA87000FF1D5 /* BinaryFloatingPoint+ParseLengthString.swift */,
+				268D176425AECA87000FF1D5 /* Data+CacheKey.swift */,
+				268D176525AECA87000FF1D5 /* String+Trim.swift */,
+				268D176625AECA87000FF1D5 /* Scalar+FromByteArray.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		268D176725AECA87000FF1D5 /* Iterators */ = {
+			isa = PBXGroup;
+			children = (
+				268D176825AECA87000FF1D5 /* PathDLexer.swift */,
+				268D176925AECA87000FF1D5 /* PathCommand.swift */,
+				268D176A25AECA87000FF1D5 /* CoordinateLexer.swift */,
+			);
+			path = Iterators;
+			sourceTree = "<group>";
+		};
+		268D176B25AECA87000FF1D5 /* SVG Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				268D176C25AECA87000FF1D5 /* SVGLayer.swift */,
+				268D176D25AECA87000FF1D5 /* CAShapeLayer+SVG.swift */,
+				268D176E25AECA87000FF1D5 /* UIView+SVG.swift */,
+				268D176F25AECA87000FF1D5 /* UIBezierPath+SVG.swift */,
+				268D177025AECA87000FF1D5 /* CALayer+SVG.swift */,
+				268D177125AECA87000FF1D5 /* SVGView.swift */,
+			);
+			path = "SVG Extensions";
 			sourceTree = "<group>";
 		};
 		2694323E25AEA4B8003DC5C3 /* nuke */ = {
@@ -263,7 +477,6 @@
 			isa = PBXGroup;
 			children = (
 				2694321325AE966C003DC5C3 /* Alamofire.framework */,
-				2694320625AE95A5003DC5C3 /* SwiftSVG.framework */,
 				0CCC1886209EDCCF003D7172 /* Sources */,
 				0C3ADAA02087D23C00FFA275 /* Resources */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -358,6 +571,7 @@
 				0C3ADAA32087D23C00FFA275 /* progressive.jpeg in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				0C3ADAA42087D23C00FFA275 /* baseline.jpeg in Resources */,
+				268D179325AECA87000FF1D5 /* cssColorNames.json in Resources */,
 				0C4878AC22A84EF900CFCFE7 /* ImagePipelineSettingsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,45 +583,93 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268D173425AECA65000FF1D5 /* GIFImageView.swift in Sources */,
+				268D178025AECA87000FF1D5 /* SVGShapeElement.swift in Sources */,
+				268D177625AECA87000FF1D5 /* NSXMLSVGParser.swift in Sources */,
+				268D177425AECA87000FF1D5 /* SVGCache.swift in Sources */,
+				268D177825AECA87000FF1D5 /* Fillable.swift in Sources */,
 				2694325225AEA4B8003DC5C3 /* ImagePipelineConfiguration.swift in Sources */,
+				268D179E25AECA87000FF1D5 /* CAShapeLayer+SVG.swift in Sources */,
+				268D178325AECA87000FF1D5 /* SVGGroup.swift in Sources */,
+				268D178F25AECA87000FF1D5 /* FloatingPoint+DegreesRadians.swift in Sources */,
 				2694325725AEA4B8003DC5C3 /* DataCache.swift in Sources */,
+				268D178525AECA87000FF1D5 /* SVGRectangle.swift in Sources */,
+				268D178D25AECA87000FF1D5 /* DispatchQueue+Extensions.swift in Sources */,
+				268D179125AECA87000FF1D5 /* UIColor+Extensions.swift in Sources */,
 				2694325625AEA4B8003DC5C3 /* ImageRequest.swift in Sources */,
 				0CCC18A3209EE0A6003D7172 /* AnimatedImageViewController.swift in Sources */,
+				268D177525AECA87000FF1D5 /* SVGParserSupportedElements.swift in Sources */,
+				268D178625AECA87000FF1D5 /* SVGPolyline.swift in Sources */,
+				268D177B25AECA87000FF1D5 /* Stylable.swift in Sources */,
+				268D178825AECA87000FF1D5 /* SVGRootElement.swift in Sources */,
+				268D173125AECA65000FF1D5 /* GIFAnimatable.swift in Sources */,
 				2694325125AEA4B8003DC5C3 /* ImageProcessing.swift in Sources */,
-				268D171C25AEC931000FF1D5 /* GIFImageView.swift in Sources */,
+				268D179A25AECA87000FF1D5 /* PathDLexer.swift in Sources */,
+				268D179625AECA87000FF1D5 /* BinaryFloatingPoint+ParseLengthString.swift in Sources */,
+				268D173025AECA65000FF1D5 /* FrameStore.swift in Sources */,
+				268D177C25AECA87000FF1D5 /* DelaysApplyingAttributes.swift in Sources */,
+				268D173725AECA65000FF1D5 /* UIImage.swift in Sources */,
+				268D178425AECA87000FF1D5 /* SVGContainerElement.swift in Sources */,
+				268D179D25AECA87000FF1D5 /* SVGLayer.swift in Sources */,
+				268D173925AECA65000FF1D5 /* ImageSourceHelpers.swift in Sources */,
 				2694324F25AEA4B8003DC5C3 /* ImageTask.swift in Sources */,
-				268D171A25AEC931000FF1D5 /* AnimatedFrame.swift in Sources */,
 				2694325525AEA4B8003DC5C3 /* ImagePreheater.swift in Sources */,
-				268D171D25AEC931000FF1D5 /* Array.swift in Sources */,
-				268D172125AEC931000FF1D5 /* ImageSourceHelpers.swift in Sources */,
 				0C4878AA22A84E9700CFCFE7 /* ImagePipelineSettingsViewController.swift in Sources */,
+				268D177E25AECA87000FF1D5 /* ParsesAsynchronously.swift in Sources */,
 				2694324E25AEA4B8003DC5C3 /* ImageCache.swift in Sources */,
 				0C880537242EB74B00F8C5B3 /* SwiftSVGDemoViewController.swift in Sources */,
 				2694325325AEA4B8003DC5C3 /* ImageEncoding.swift in Sources */,
+				268D173625AECA65000FF1D5 /* CGSize.swift in Sources */,
+				268D178A25AECA87000FF1D5 /* SVGCircle.swift in Sources */,
 				0CCC1899209EDCCF003D7172 /* AppDelegate.swift in Sources */,
+				268D179925AECA87000FF1D5 /* Scalar+FromByteArray.swift in Sources */,
+				268D17A325AECA87000FF1D5 /* NSBezierPath+CrossPlatform.swift in Sources */,
+				268D178925AECA87000FF1D5 /* SVGEllipse.swift in Sources */,
 				2694325825AEA4B8003DC5C3 /* ImageDecoding.swift in Sources */,
-				268D172025AEC931000FF1D5 /* UIImageView.swift in Sources */,
+				268D173325AECA65000FF1D5 /* Animator.swift in Sources */,
+				268D179025AECA87000FF1D5 /* Dictionary+Add.swift in Sources */,
+				268D177F25AECA87000FF1D5 /* SVGPolygon.swift in Sources */,
 				0CCC189A209EDCCF003D7172 /* Utilities.swift in Sources */,
 				0CE5F687215688590046609F /* PrefetchingDemoViewController.swift in Sources */,
+				268D179425AECA87000FF1D5 /* String+Subscript.swift in Sources */,
+				268D179F25AECA87000FF1D5 /* UIView+SVG.swift in Sources */,
+				268D17A125AECA87000FF1D5 /* CALayer+SVG.swift in Sources */,
 				2694325925AEA4B8003DC5C3 /* Deprecated.swift in Sources */,
 				0CCC189C209EDCCF003D7172 /* MenuViewController.swift in Sources */,
-				268D171825AEC931000FF1D5 /* FrameStore.swift in Sources */,
-				268D171925AEC931000FF1D5 /* GIFAnimatable.swift in Sources */,
+				268D17A425AECA87000FF1D5 /* CrossPlatform.swift in Sources */,
+				268D177A25AECA87000FF1D5 /* Strokable.swift in Sources */,
+				268D17A225AECA87000FF1D5 /* SVGView.swift in Sources */,
+				268D178125AECA87000FF1D5 /* SVGLine.swift in Sources */,
+				268D177725AECA87000FF1D5 /* SVGParser.swift in Sources */,
+				268D179725AECA87000FF1D5 /* Data+CacheKey.swift in Sources */,
 				2694325425AEA4B8003DC5C3 /* ImageViewExtensions.swift in Sources */,
+				268D178E25AECA87000FF1D5 /* Stack.swift in Sources */,
+				268D177D25AECA87000FF1D5 /* Identifiable.swift in Sources */,
+				268D173525AECA65000FF1D5 /* Array.swift in Sources */,
 				2694325A25AEA4B8003DC5C3 /* Internal.swift in Sources */,
+				268D17A025AECA87000FF1D5 /* UIBezierPath+SVG.swift in Sources */,
+				268D179B25AECA87000FF1D5 /* PathCommand.swift in Sources */,
+				268D177925AECA87000FF1D5 /* Transformable.swift in Sources */,
 				2694325025AEA4B8003DC5C3 /* ImagePipeline.swift in Sources */,
-				268D171E25AEC931000FF1D5 /* CGSize.swift in Sources */,
 				0CD878972431108200DE301A /* Images.swift in Sources */,
 				0CCC1896209EDCCF003D7172 /* RateLimiterDemoViewController.swift in Sources */,
+				268D179225AECA87000FF1D5 /* Dictionary+JSON.swift in Sources */,
+				268D178B25AECA87000FF1D5 /* Print.swift in Sources */,
 				2694325C25AEA4B8003DC5C3 /* Task.swift in Sources */,
 				0CCC18A8209EE341003D7172 /* AlamofireIntegrationDemoViewController.swift in Sources */,
+				268D178225AECA87000FF1D5 /* SVGPath.swift in Sources */,
 				0CCC1898209EDCCF003D7172 /* DataCachingDemoViewController.swift in Sources */,
 				0CBBB09B20A8116C007474D2 /* AnimatedImageUsingVideoViewController.swift in Sources */,
+				268D178C25AECA87000FF1D5 /* Unown.swift in Sources */,
 				2694325B25AEA4B8003DC5C3 /* DataLoader.swift in Sources */,
-				268D171B25AEC931000FF1D5 /* Animator.swift in Sources */,
+				268D173225AECA65000FF1D5 /* AnimatedFrame.swift in Sources */,
+				268D179C25AECA87000FF1D5 /* CoordinateLexer.swift in Sources */,
+				268D173825AECA65000FF1D5 /* UIImageView.swift in Sources */,
 				0CCC189D209EDCCF003D7172 /* ProgressiveDecodingDemoViewController.swift in Sources */,
-				268D171F25AEC931000FF1D5 /* UIImage.swift in Sources */,
+				268D178725AECA87000FF1D5 /* SVGElement.swift in Sources */,
 				0C4388A822AC060F007906A7 /* ImageProcessingDemoViewController.swift in Sources */,
+				268D179525AECA87000FF1D5 /* CALayer+Sublayers.swift in Sources */,
+				268D179825AECA87000FF1D5 /* String+Trim.swift in Sources */,
 				0CCC1894209EDCCF003D7172 /* BasicDemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

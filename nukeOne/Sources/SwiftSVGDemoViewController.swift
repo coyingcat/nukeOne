@@ -8,7 +8,7 @@
 
 import UIKit
 
-import SwiftSVG
+
 
 final class SwiftSVGDemoViewController: UIViewController {
     override func viewDidLoad() {
