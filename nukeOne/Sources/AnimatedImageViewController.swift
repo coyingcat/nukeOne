@@ -4,7 +4,7 @@
 
 import UIKit
 
-import Gifu
+
 
 // MARK: - AnimatedImageViewController
 

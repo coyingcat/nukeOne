@@ -26,10 +26,18 @@
 		0CCC18A8209EE341003D7172 /* AlamofireIntegrationDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCC18A7209EE341003D7172 /* AlamofireIntegrationDemoViewController.swift */; };
 		0CD878972431108200DE301A /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD878962431108200DE301A /* Images.swift */; };
 		0CE5F687215688590046609F /* PrefetchingDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5F686215688590046609F /* PrefetchingDemoViewController.swift */; };
+		268D171825AEC931000FF1D5 /* FrameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D170C25AEC931000FF1D5 /* FrameStore.swift */; };
+		268D171925AEC931000FF1D5 /* GIFAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D170D25AEC931000FF1D5 /* GIFAnimatable.swift */; };
+		268D171A25AEC931000FF1D5 /* AnimatedFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D170E25AEC931000FF1D5 /* AnimatedFrame.swift */; };
+		268D171B25AEC931000FF1D5 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D170F25AEC931000FF1D5 /* Animator.swift */; };
+		268D171C25AEC931000FF1D5 /* GIFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D171025AEC931000FF1D5 /* GIFImageView.swift */; };
+		268D171D25AEC931000FF1D5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D171225AEC931000FF1D5 /* Array.swift */; };
+		268D171E25AEC931000FF1D5 /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D171325AEC931000FF1D5 /* CGSize.swift */; };
+		268D171F25AEC931000FF1D5 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D171425AEC931000FF1D5 /* UIImage.swift */; };
+		268D172025AEC931000FF1D5 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D171525AEC931000FF1D5 /* UIImageView.swift */; };
+		268D172125AEC931000FF1D5 /* ImageSourceHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268D171725AEC931000FF1D5 /* ImageSourceHelpers.swift */; };
 		2694321625AE96A2003DC5C3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2694321325AE966C003DC5C3 /* Alamofire.framework */; };
 		2694321725AE96A2003DC5C3 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2694321325AE966C003DC5C3 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2694321B25AE96A5003DC5C3 /* Gifu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2694320125AE956B003DC5C3 /* Gifu.framework */; };
-		2694321C25AE96A5003DC5C3 /* Gifu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2694320125AE956B003DC5C3 /* Gifu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2694321D25AE96A6003DC5C3 /* SwiftSVG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2694320625AE95A5003DC5C3 /* SwiftSVG.framework */; };
 		2694321E25AE96A6003DC5C3 /* SwiftSVG.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2694320625AE95A5003DC5C3 /* SwiftSVG.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2694324E25AEA4B8003DC5C3 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2694323F25AEA4B8003DC5C3 /* ImageCache.swift */; };
@@ -59,7 +67,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				2694321725AE96A2003DC5C3 /* Alamofire.framework in Embed Frameworks */,
-				2694321C25AE96A5003DC5C3 /* Gifu.framework in Embed Frameworks */,
 				2694321E25AE96A6003DC5C3 /* SwiftSVG.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -90,7 +97,16 @@
 		0CCC18A7209EE341003D7172 /* AlamofireIntegrationDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireIntegrationDemoViewController.swift; sourceTree = "<group>"; };
 		0CD878962431108200DE301A /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		0CE5F686215688590046609F /* PrefetchingDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefetchingDemoViewController.swift; sourceTree = "<group>"; };
-		2694320125AE956B003DC5C3 /* Gifu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gifu.framework; sourceTree = "<group>"; };
+		268D170C25AEC931000FF1D5 /* FrameStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameStore.swift; sourceTree = "<group>"; };
+		268D170D25AEC931000FF1D5 /* GIFAnimatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFAnimatable.swift; sourceTree = "<group>"; };
+		268D170E25AEC931000FF1D5 /* AnimatedFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedFrame.swift; sourceTree = "<group>"; };
+		268D170F25AEC931000FF1D5 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		268D171025AEC931000FF1D5 /* GIFImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFImageView.swift; sourceTree = "<group>"; };
+		268D171225AEC931000FF1D5 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		268D171325AEC931000FF1D5 /* CGSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSize.swift; sourceTree = "<group>"; };
+		268D171425AEC931000FF1D5 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		268D171525AEC931000FF1D5 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		268D171725AEC931000FF1D5 /* ImageSourceHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSourceHelpers.swift; sourceTree = "<group>"; };
 		2694320625AE95A5003DC5C3 /* SwiftSVG.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftSVG.framework; sourceTree = "<group>"; };
 		2694321325AE966C003DC5C3 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		2694323F25AEA4B8003DC5C3 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
@@ -118,7 +134,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2694321B25AE96A5003DC5C3 /* Gifu.framework in Frameworks */,
 				2694321625AE96A2003DC5C3 /* Alamofire.framework in Frameworks */,
 				2694321D25AE96A6003DC5C3 /* SwiftSVG.framework in Frameworks */,
 			);
@@ -151,6 +166,7 @@
 		0CCC1886209EDCCF003D7172 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				268D170A25AEC931000FF1D5 /* Gifu */,
 				2694323E25AEA4B8003DC5C3 /* nuke */,
 				0CCC188D209EDCCF003D7172 /* AppDelegate.swift */,
 				0CCC1892209EDCCF003D7172 /* MenuViewController.swift */,
@@ -176,6 +192,47 @@
 			children = (
 				0CCC188F209EDCCF003D7172 /* Utilities.swift */,
 				0CD878962431108200DE301A /* Images.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		268D170A25AEC931000FF1D5 /* Gifu */ = {
+			isa = PBXGroup;
+			children = (
+				268D170B25AEC931000FF1D5 /* Classes */,
+				268D171125AEC931000FF1D5 /* Extensions */,
+				268D171625AEC931000FF1D5 /* Helpers */,
+			);
+			path = Gifu;
+			sourceTree = "<group>";
+		};
+		268D170B25AEC931000FF1D5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				268D170C25AEC931000FF1D5 /* FrameStore.swift */,
+				268D170D25AEC931000FF1D5 /* GIFAnimatable.swift */,
+				268D170E25AEC931000FF1D5 /* AnimatedFrame.swift */,
+				268D170F25AEC931000FF1D5 /* Animator.swift */,
+				268D171025AEC931000FF1D5 /* GIFImageView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		268D171125AEC931000FF1D5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				268D171225AEC931000FF1D5 /* Array.swift */,
+				268D171325AEC931000FF1D5 /* CGSize.swift */,
+				268D171425AEC931000FF1D5 /* UIImage.swift */,
+				268D171525AEC931000FF1D5 /* UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		268D171625AEC931000FF1D5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				268D171725AEC931000FF1D5 /* ImageSourceHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -207,7 +264,6 @@
 			children = (
 				2694321325AE966C003DC5C3 /* Alamofire.framework */,
 				2694320625AE95A5003DC5C3 /* SwiftSVG.framework */,
-				2694320125AE956B003DC5C3 /* Gifu.framework */,
 				0CCC1886209EDCCF003D7172 /* Sources */,
 				0C3ADAA02087D23C00FFA275 /* Resources */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -318,21 +374,29 @@
 				2694325625AEA4B8003DC5C3 /* ImageRequest.swift in Sources */,
 				0CCC18A3209EE0A6003D7172 /* AnimatedImageViewController.swift in Sources */,
 				2694325125AEA4B8003DC5C3 /* ImageProcessing.swift in Sources */,
+				268D171C25AEC931000FF1D5 /* GIFImageView.swift in Sources */,
 				2694324F25AEA4B8003DC5C3 /* ImageTask.swift in Sources */,
+				268D171A25AEC931000FF1D5 /* AnimatedFrame.swift in Sources */,
 				2694325525AEA4B8003DC5C3 /* ImagePreheater.swift in Sources */,
+				268D171D25AEC931000FF1D5 /* Array.swift in Sources */,
+				268D172125AEC931000FF1D5 /* ImageSourceHelpers.swift in Sources */,
 				0C4878AA22A84E9700CFCFE7 /* ImagePipelineSettingsViewController.swift in Sources */,
 				2694324E25AEA4B8003DC5C3 /* ImageCache.swift in Sources */,
 				0C880537242EB74B00F8C5B3 /* SwiftSVGDemoViewController.swift in Sources */,
 				2694325325AEA4B8003DC5C3 /* ImageEncoding.swift in Sources */,
 				0CCC1899209EDCCF003D7172 /* AppDelegate.swift in Sources */,
 				2694325825AEA4B8003DC5C3 /* ImageDecoding.swift in Sources */,
+				268D172025AEC931000FF1D5 /* UIImageView.swift in Sources */,
 				0CCC189A209EDCCF003D7172 /* Utilities.swift in Sources */,
 				0CE5F687215688590046609F /* PrefetchingDemoViewController.swift in Sources */,
 				2694325925AEA4B8003DC5C3 /* Deprecated.swift in Sources */,
 				0CCC189C209EDCCF003D7172 /* MenuViewController.swift in Sources */,
+				268D171825AEC931000FF1D5 /* FrameStore.swift in Sources */,
+				268D171925AEC931000FF1D5 /* GIFAnimatable.swift in Sources */,
 				2694325425AEA4B8003DC5C3 /* ImageViewExtensions.swift in Sources */,
 				2694325A25AEA4B8003DC5C3 /* Internal.swift in Sources */,
 				2694325025AEA4B8003DC5C3 /* ImagePipeline.swift in Sources */,
+				268D171E25AEC931000FF1D5 /* CGSize.swift in Sources */,
 				0CD878972431108200DE301A /* Images.swift in Sources */,
 				0CCC1896209EDCCF003D7172 /* RateLimiterDemoViewController.swift in Sources */,
 				2694325C25AEA4B8003DC5C3 /* Task.swift in Sources */,
@@ -340,7 +404,9 @@
 				0CCC1898209EDCCF003D7172 /* DataCachingDemoViewController.swift in Sources */,
 				0CBBB09B20A8116C007474D2 /* AnimatedImageUsingVideoViewController.swift in Sources */,
 				2694325B25AEA4B8003DC5C3 /* DataLoader.swift in Sources */,
+				268D171B25AEC931000FF1D5 /* Animator.swift in Sources */,
 				0CCC189D209EDCCF003D7172 /* ProgressiveDecodingDemoViewController.swift in Sources */,
+				268D171F25AEC931000FF1D5 /* UIImage.swift in Sources */,
 				0C4388A822AC060F007906A7 /* ImageProcessingDemoViewController.swift in Sources */,
 				0CCC1894209EDCCF003D7172 /* BasicDemoViewController.swift in Sources */,
 			);
