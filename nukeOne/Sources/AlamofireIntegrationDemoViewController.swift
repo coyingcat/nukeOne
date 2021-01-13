@@ -4,7 +4,7 @@
 
 import UIKit
 
-import Alamofire
+
 
 final class AlamofireIntegrationDemoViewController: BasicDemoViewController {
     override func viewDidLoad() {
@@ -19,11 +19,11 @@ final class AlamofireIntegrationDemoViewController: BasicDemoViewController {
 
 /// Implements data loading using Alamofire framework.
 public class AlamofireDataLoader: DataLoading {
-    public let session: Alamofire.Session
+    public let session: Session
 
     /// Initializes the receiver with a given Alamofire.SessionManager.
     /// - parameter session: Alamofire.Session.default by default.
-    public init(session: Alamofire.Session = Alamofire.Session.default) {
+    public init(session: Session = Session.default) {
         self.session = session
     }
 
