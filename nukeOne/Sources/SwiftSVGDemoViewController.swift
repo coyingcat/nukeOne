@@ -38,10 +38,11 @@ final class SwiftSVGDemoViewController: UIViewController {
 
             // You can render image using whatever size you want, vector!
             let targetBounds = CGRect(origin: .zero, size: CGSize(width: 300, height: 300))
-            let svgView = UIView(SVGData: data) { layer in
+            let svgView = UIView(svgData: data, parser: nil) { (layer) in
                 layer.fillColor = UIColor.orange.cgColor
                 layer.resizeToFit(targetBounds)
             }
+
             self.view.addSubview(svgView)
 
             svgView.bounds = targetBounds
