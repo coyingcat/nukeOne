@@ -7,11 +7,11 @@ import UIKit
 
 /// A base view controller.
 class BasicDemoViewController: UICollectionViewController, ImagePipelineSettingsViewControllerDelegate {
-    var photos: [URL] = []
+    var photos = [URL]()
     var pipeline = ImagePipeline.shared
-    var itemsPerRow: Int = 4
+    var itemsPerRow = 4
 
-    init(collectionViewLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()) {
+    init(){
         super.init(collectionViewLayout: UICollectionViewFlowLayout())
     }
 
