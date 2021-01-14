@@ -124,8 +124,6 @@ final class ImagePipelineSettingsViewController: UITableViewController {
         } else if configuration.dataCache != nil {
             dataCacheTitle.text = "Data Cache (Custom)"
             dataCacheEnabledSwitch.isEnabled = false
-        } else {
-            // Do nothing
         }
 
         queueDataLoadingValueLabel.text = "\(configuration.dataLoadingQueue.maxConcurrentOperationCount)"
