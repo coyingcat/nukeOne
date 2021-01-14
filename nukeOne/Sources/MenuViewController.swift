@@ -13,11 +13,9 @@ final class MenuViewController: UITableViewController {
 
         UIApplication.shared.keyWindow?.tintColor = UIColor(red: 0.992, green: 0.243, blue: 0.416, alpha: 1.00)
 
-        if #available(iOS 11.0, *) {
-            navigationController?.navigationBar.prefersLargeTitles = true
-            navigationItem.largeTitleDisplayMode = .automatic
-        }
-
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .automatic
+        
         sections = [generalSection, integrationSection, advancedSection]
     }
 
