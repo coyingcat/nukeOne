@@ -9,12 +9,12 @@ import UIKit
 // MARK: - AnimatedImageViewController
 
 final class AnimatedImageViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-    override init(nibName nibNameOrNil: String? = nil, bundle nibBundleOrNil: Bundle? = nil) {
+    init(){
         super.init(collectionViewLayout: UICollectionViewFlowLayout())
     }
 
     required init?(coder aDecoder: NSCoder) {
-        super.init(collectionViewLayout: UICollectionViewFlowLayout())
+        fatalError()
     }
 
     override func viewWillAppear(_ animated: Bool) {
