@@ -82,7 +82,7 @@ private extension ImageDecoders {
             }
         }
 
-        private static var isRegistered: Bool = false
+        private static var isRegistered = false
 
         static func register() {
             guard !isRegistered else { return }

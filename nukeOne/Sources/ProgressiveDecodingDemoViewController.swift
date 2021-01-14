@@ -141,6 +141,15 @@ private final class ProgressiveImageView: UIView {
     }
 }
 
+
+
+
+
+
+
+
+
+
 private final class _MockDataLoader: DataLoading {
     private final class _MockTask: Cancellable {
         func cancel() { }
