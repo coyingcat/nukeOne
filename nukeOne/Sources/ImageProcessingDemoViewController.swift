@@ -62,24 +62,27 @@ final class ImageProcessingDemoViewController: UIViewController, ImagePipelineSe
         views[2][0].aspectRatio = 1
         views[2][1].aspectRatio = 1
 
-        loadImages()
+        loadImagesB()
     }
+    
+    
+    
 
-    func loadImages() {
-        loadImage(view: views[0][0], title: "Original", processors: [])
+    func loadImagesB() {
+        loadImageA(view: views[0][0], title: "Original", processors: [])
 
         let screenWidth = UIScreen.main.bounds.size.width / 3
         let targetSize = CGSize(width: screenWidth, height: (screenWidth * 2 / 3))
-        loadImage(view: views[0][1], title: "Resize", processors: [
+        loadImageA(view: views[0][1], title: "Resize", processors: [
             ImageProcessors.Resize(size: targetSize)
         ])
 
-        loadImage(view: views[1][0], title: "Rounded Corners", processors: [
+        loadImageA(view: views[1][0], title: "Rounded Corners", processors: [
             ImageProcessors.Resize(size: targetSize),
             ImageProcessors.RoundedCorners(radius: 8)
         ])
 
-        loadImage(view: views[1][1], title: "Monochrome", processors: [
+        loadImageA(view: views[1][1], title: "Monochrome", processors: [
             ImageProcessors.Resize(size: targetSize),
             ImageProcessors.RoundedCorners(radius: 8),
             ImageProcessors.CoreImageFilter(name: "CIColorMonochrome",
@@ -88,19 +91,19 @@ final class ImageProcessingDemoViewController: UIViewController, ImagePipelineSe
                                            identifier: "nuke.demo.monochrome")
         ])
 
-        loadImage(view: views[2][0], title: "Circle", processors: [
+        loadImageA(view: views[2][0], title: "Circle", processors: [
             ImageProcessors.Resize(size: targetSize),
             ImageProcessors.Circle()
         ])
 
-        loadImage(view: views[2][1], title: "Blur", processors: [
+        loadImageA(view: views[2][1], title: "Blur", processors: [
             ImageProcessors.Resize(size: targetSize),
             ImageProcessors.Circle(),
             ImageProcessors.GaussianBlur(radius: 3)
         ])
     }
 
-    private func loadImage(view: ImageProcessingView, title: String, processors: [ImageProcessing]) {
+    private func loadImageA(view: ImageProcessingView, title: String, processors: [ImageProcessing]) {
         let request = ImageRequest(
             url: URL(string: "https://user-images.githubusercontent.com/1567433/59150453-178bbb80-8a24-11e9-94ca-fd8dff6e2a9a.jpeg")!,
             processors: processors
@@ -117,7 +120,7 @@ final class ImageProcessingDemoViewController: UIViewController, ImagePipelineSe
     // MARK: - Actions
 
     @objc private func refreshControlValueChanged() {
-        loadImages()
+        loadImagesB()
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
             self.refreshControl.endRefreshing()
         }
