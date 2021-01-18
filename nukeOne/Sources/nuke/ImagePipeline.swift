@@ -122,7 +122,7 @@ public /* final */ class ImagePipeline {
                           queue: DispatchQueue? = nil,
                           progress progressHandler: ImageTask.ProgressHandler? = nil,
                           completion: ImageTask.Completion? = nil) -> ImageTask {
-        loadImage(with: request.asImageRequest(), isMainThreadConfined: false, queue: queue) { task, event in
+        loadImageB(with: request.asImageRequest(), isMainThreadConfined: false, queue: queue) { task, event in
             switch event {
             case let .value(response, isCompleted):
                 if isCompleted {
@@ -140,7 +140,7 @@ public /* final */ class ImagePipeline {
 
     /// - parameter isMainThreadConfined: Enables some performance optimizations like
     /// lock-free `ImageTask`.
-    func loadImage(with request: ImageRequest,
+    func loadImageB(with request: ImageRequest,
                    isMainThreadConfined: Bool,
                    queue: DispatchQueue?,
                    observer: @escaping (ImageTask, Task<ImageResponse, Error>.Event) -> Void) -> ImageTask {
