@@ -64,8 +64,7 @@ final class ProgressiveDecodingDemoViewController: UIViewController {
         options.pipeline = pipeline
         options.transition = .fadeIn(duration: 0.25)
 
-        loadImage(
-            with: ImageRequest(url: url, processors: [_ProgressiveBlurImageProcessor()]),
+        loadImageY(with: ImageRequest(url: url, processors: [_ProgressiveBlurImageProcessor()]),
             options: options,
             into: imageView,
             progress: { _, completed, total in

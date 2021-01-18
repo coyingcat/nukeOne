@@ -110,7 +110,7 @@ final class ImageProcessingDemoViewController: UIViewController, ImagePipelineSe
 
         var options = ImageLoadingOptions(transition: .fadeIn(duration: 0.5))
         options.pipeline = pipeline
-        NukeDemo_Example.loadImage(with: request, options: options, into: view.imageView)
+        NukeDemo_Example.loadImageY(with: request, options: options, into: view.imageView)
         
     }
 

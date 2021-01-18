@@ -68,11 +68,11 @@ extension WKInterfaceImage: Nuke_ImageDisplaying {
 // MARK: - ImageView Extensions
 
 @discardableResult
-public func loadImage(with request: ImageRequestConvertible,
+public func loadImageX(with request: ImageRequestConvertible,
                       options: ImageLoadingOptions = ImageLoadingOptions.shared,
                       into view: ImageDisplayingView,
                       completion: @escaping ImageTask.Completion) -> ImageTask? {
-    loadImage(with: request, options: options, into: view, progress: nil, completion: completion)
+    loadImageY(with: request, options: options, into: view, progress: nil, completion: completion)
 }
 
 /// Loads an image with the given request and displays it in the view.
@@ -96,7 +96,7 @@ public func loadImage(with request: ImageRequestConvertible,
 /// the memory cache. `nil` by default.
 /// - returns: An image task or `nil` if the image was found in the memory cache.
 @discardableResult
-public func loadImage(with request: ImageRequestConvertible,
+public func loadImageY(with request: ImageRequestConvertible,
                       options: ImageLoadingOptions = ImageLoadingOptions.shared,
                       into view: ImageDisplayingView,
                       progress: ImageTask.ProgressHandler? = nil,
