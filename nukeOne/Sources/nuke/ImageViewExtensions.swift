@@ -103,7 +103,7 @@ public func loadImageY(with request: ImageRequestConvertible,
                       completion: ImageTask.Completion? = nil) -> ImageTask? {
     assert(Thread.isMainThread)
     let controller = ImageViewController.controller(for: view)
-    return controller.loadImage(with: request.asImageRequest(), options: options, progress: progress, completion: completion)
+    return controller.loadImageZ(with: request.asImageRequest(), options: options, progress: progress, completion: completion)
 }
 
 /// Cancels an outstanding request associated with the view.
@@ -340,7 +340,7 @@ private final class ImageViewController {
     // MARK: - Loading Images
 
     // swiftlint:disable:next cyclomatic_complexity function_body_length
-    func loadImage(with request: ImageRequest,
+    func loadImageZ(with request: ImageRequest,
                    options: ImageLoadingOptions,
                    progress progressHandler: ImageTask.ProgressHandler? = nil,
                    completion: ImageTask.Completion? = nil) -> ImageTask? {
