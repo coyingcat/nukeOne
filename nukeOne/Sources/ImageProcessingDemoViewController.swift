@@ -8,11 +8,9 @@ import UIKit
 final class ImageProcessingDemoViewController: UIViewController, ImagePipelineSettingsViewControllerDelegate {
     private var pipeline = ImagePipeline.shared
 
-    private let views: [[ImageProcessingView]] = [
-        [ImageProcessingView(), ImageProcessingView()],
-        [ImageProcessingView(), ImageProcessingView()],
-        [ImageProcessingView(), ImageProcessingView()]
-    ]
+    private let views = [[ImageProcessingView(), ImageProcessingView()],
+                         [ImageProcessingView(), ImageProcessingView()],
+                         [ImageProcessingView(), ImageProcessingView()]]
 
     private let refreshControl = UIRefreshControl()
     private let scrollView = UIScrollView()
