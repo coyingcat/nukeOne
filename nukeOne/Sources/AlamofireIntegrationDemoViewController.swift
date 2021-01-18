@@ -30,7 +30,7 @@ public class AlamofireDataLoader: DataLoading {
     // MARK: DataLoading
 
     /// Loads data using Alamofire.SessionManager.
-    public func loadData(with request: URLRequest, didReceiveData: @escaping (Data, URLResponse) -> Void, completion: @escaping (Error?) -> Void) -> Cancellable {
+    public func loadDataZ(with request: URLRequest, didReceiveData: @escaping (Data, URLResponse) -> Void, completion: @escaping (Error?) -> Void) -> Cancellable {
         // Alamofire.SessionManager automatically starts requests as soon as they are created (see `startRequestsImmediately`)
         let task = self.session.streamRequest(request)
         task.responseStream { [weak task] stream in

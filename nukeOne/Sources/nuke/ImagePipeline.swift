@@ -72,7 +72,7 @@ public /* final */ class ImagePipeline {
     public func loadImage(with request: ImageRequestConvertible,
                           queue: DispatchQueue? = nil,
                           completion: @escaping ImageTask.Completion) -> ImageTask {
-        loadImage(with: request, queue: queue, progress: nil, completion: completion)
+        loadImageA(with: request, queue: queue, progress: nil, completion: completion)
     }
 
     /// Loads an image for the given request using image loading pipeline.
@@ -118,7 +118,7 @@ public /* final */ class ImagePipeline {
     /// - parameter completion: A closure to be called on the main thread when the
     /// request is finished. `nil` by default.
     @discardableResult
-    public func loadImage(with request: ImageRequestConvertible,
+    public func loadImageA(with request: ImageRequestConvertible,
                           queue: DispatchQueue? = nil,
                           progress progressHandler: ImageTask.ProgressHandler? = nil,
                           completion: ImageTask.Completion? = nil) -> ImageTask {
@@ -741,7 +741,7 @@ private extension ImagePipeline {
         let log = Log(self.log, "Load Image Data")
         log.signpost(.begin, "URL: \(urlRequest.url?.absoluteString ?? ""), resumable data: \(Log.bytes(context.resumableData?.data.count ?? 0))")
 
-        let dataTask = configuration.dataLoader.loadData(
+        let dataTask = configuration.dataLoader.loadDataZ(
             with: urlRequest,
             didReceiveData: { [weak self, weak task] data, response in
                 guard let self = self, let task = task else { return }

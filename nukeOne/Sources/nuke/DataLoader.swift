@@ -13,7 +13,7 @@ public protocol DataLoading {
     /// is supported.
     /// - parameter completion: Must be called once after all (or none in case
     /// of an error) `didReceiveData` closures have been called.
-    func loadData(with request: URLRequest,
+    func loadDataZ(with request: URLRequest,
                   didReceiveData: @escaping (Data, URLResponse) -> Void,
                   completion: @escaping (Error?) -> Void) -> Cancellable
 
@@ -85,7 +85,7 @@ public final class DataLoader: DataLoading, _DataLoaderObserving {
         #endif
     }()
 
-    public func loadData(with request: URLRequest,
+    public func loadDataZ(with request: URLRequest,
                          didReceiveData: @escaping (Data, URLResponse) -> Void,
                          completion: @escaping (Swift.Error?) -> Void) -> Cancellable {
         return impl.loadData(with: request, session: session, didReceiveData: didReceiveData, completion: completion)
