@@ -19,7 +19,7 @@ import os
 /// `ImagePipeline` is fully thread-safe.
 public /* final */ class ImagePipeline {
     public let configuration: Configuration
-    public var observer: ImagePipelineObserving?
+    public var observerX: ImagePipelineObserving?
 
     // The queue on which the entire subsystem is synchronized.
     private let queue = DispatchQueue(label: "com.github.kean.Nuke.ImagePipeline", target: .global(qos: .userInitiated))
@@ -194,7 +194,7 @@ public /* final */ class ImagePipeline {
         queue.async {
             guard let subscription = self.tasks.removeValue(forKey: task) else { return }
             if !task.isDataTask {
-                self.send(.cancelled, task)
+                self.send(y: .cancelled, task)
             }
             subscription.unsubscribe()
         }
@@ -205,7 +205,7 @@ public /* final */ class ImagePipeline {
             task._priority = priority
             guard let subscription = self.tasks[task] else { return }
             if !task.isDataTask {
-                self.send(.priorityUpdated(priority: priority), task)
+                self.send(y: .priorityUpdated(priority: priority), task)
             }
             subscription.setPriority(priority)
         }
@@ -270,13 +270,13 @@ public extension ImagePipeline {
 
 private extension ImagePipeline {
     func startImageTask(_ task: ImageTask, observer: @escaping (ImageTask, Task<ImageResponse, Error>.Event) -> Void) {
-        self.send(.started, task)
+        self.send(y: .started, task)
 
         tasks[task] = getDecompressedImage(for: task.request)
             .subscribe(priority: task._priority) { [weak self, weak task] event in
                 guard let self = self, let task = task else { return }
 
-                self.send(ImageTaskEvent(event), task)
+                self.send(y: ImageTaskEvent(event), task)
 
                 if event.isCompleted {
                     self.tasks[task] = nil
@@ -844,8 +844,8 @@ private extension ImagePipeline {
         return request
     }
 
-    func send(_ event: ImageTaskEvent, _ task: ImageTask) {
-        observer?.pipeline(self, imageTask: task, didReceiveEvent: event)
+    func send(y event: ImageTaskEvent, _ task: ImageTask) {
+        observerX?.pipeline(hah: self, imageTask: task, didReceiveEvent: event)
     }
 }
 

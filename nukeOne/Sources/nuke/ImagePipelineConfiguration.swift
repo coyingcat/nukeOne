@@ -197,7 +197,7 @@ public enum ImageTaskEvent {
 /// delivered on the internal serial dispatch queue.
 public protocol ImagePipelineObserving {
     /// Delivers the events produced by the image tasks started via `loadImage` method.
-    func pipeline(_ pipeline: ImagePipeline, imageTask: ImageTask, didReceiveEvent event: ImageTaskEvent)
+    func pipeline(hah pipeline: ImagePipeline, imageTask: ImageTask, didReceiveEvent event: ImageTaskEvent)
 }
 
 extension ImageTaskEvent {
