@@ -250,7 +250,7 @@ public final class DataCache: DataCaching {
     public func flush(for key: Key) {
         queue.sync {
             guard let change = lock.sync({ staging.changes[key] }) else { return }
-            perform(change)
+            perform(io: change)
             lock.sync { staging.flushed(change) }
         }
     }
@@ -299,7 +299,7 @@ public final class DataCache: DataCaching {
                 perform(change)
             }
             for change in staging.changes.values {
-                perform(change)
+                perform(io: change)
             }
         }
     }
@@ -310,7 +310,7 @@ public final class DataCache: DataCaching {
     }
 
     /// Performs the IO for the given change.
-    private func perform(_ change: Staging.Change) {
+    private func perform(io change: Staging.Change) {
         guard let url = url(for: change.key) else {
             return
         }

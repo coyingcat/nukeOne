@@ -125,6 +125,7 @@ public extension ImageEncoders {
             let options: NSDictionary = [
                 kCGImageDestinationLossyCompressionQuality: compressionRatio
             ]
+            
             guard let source = image.cgImage,
                 let destination = CGImageDestinationCreateWithData(
                     data as CFMutableData, type.rawValue as CFString, 1, nil
