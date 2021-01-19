@@ -223,7 +223,7 @@ public extension ImagePipeline {
     /// Returns a cached response from the memory cache. Returns `nil` if the request disables
     /// memory cache reads.
     func cachedImage(for request: ImageRequest) -> ImageContainer? {
-        guard request.options.memoryCacheOptions.isReadAllowed && request.cachePolicy != .reloadIgnoringCachedData else { return nil }
+        guard request.options.memoryCacheOptions.isReadAllowed, request.cachePolicy != .reloadIgnoringCachedData else { return nil }
 
         let request = inheritOptions(request)
         return configuration.imageCache?[request]
@@ -242,8 +242,10 @@ public extension ImagePipeline {
     /// Returns a key used for disk cache (see `DataCaching`).
     func cacheKey(for request: ImageRequest, item: DataCacheItem) -> String {
         switch item {
-        case .originalImageData: return request.makeCacheKeyForOriginalImageData()
-        case .finalImage: return request.makeCacheKeyForFinalImageData()
+        case .originalImageData:
+            return request.makeCacheKeyForOriginalImageData()
+        case .finalImage:
+            return request.makeCacheKeyForFinalImageData()
         }
     }
 }
