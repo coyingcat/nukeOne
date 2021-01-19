@@ -422,21 +422,21 @@ private final class ImageViewController {
     private func handle(result: Result<ImageResponse, ImagePipeline.Error>, fromMemCache: Bool, options: ImageLoadingOptions) {
         switch result {
         case let .success(response):
-            display(response.image, options.transition, options.alwaysTransition, fromMemCache, options.contentModes?.success, options.tintColors?.success)
+            displayX(response.image, options.transition, options.alwaysTransition, fromMemCache, options.contentModes?.success, options.tintColors?.success)
         case .failure:
             if let failureImage = options.failureImage {
-                display(failureImage, options.failureImageTransition, options.alwaysTransition, fromMemCache, options.contentModes?.failure, options.tintColors?.failure)
+                displayX(failureImage, options.failureImageTransition, options.alwaysTransition, fromMemCache, options.contentModes?.failure, options.tintColors?.failure)
             }
         }
         self.task = nil
     }
 
     private func handle(partialImage response: ImageResponse, options: ImageLoadingOptions) {
-        display(response.image, options.transition, options.alwaysTransition, false, options.contentModes?.success, options.tintColors?.success)
+        displayX(response.image, options.transition, options.alwaysTransition, false, options.contentModes?.success, options.tintColors?.success)
     }
 
     // swiftlint:disable:next function_parameter_count
-    private func display(_ image: UIImage, _ transition: ImageLoadingOptions.Transition?, _ alwaysTransition: Bool, _ fromMemCache: Bool, _ newContentMode: UIView.ContentMode?, _ newTintColor: UIColor?) {
+    private func displayX(_ image: UIImage, _ transition: ImageLoadingOptions.Transition?, _ alwaysTransition: Bool, _ fromMemCache: Bool, _ newContentMode: UIView.ContentMode?, _ newTintColor: UIColor?) {
         guard let imageView = imageView else {
             return
         }
