@@ -67,7 +67,7 @@ public extension ImageEncoders {
             }
             let type: ImageType
             if cgImage.isOpaque {
-                if isHEIFPreferred && ImageEncoders.ImageIO.isSupported(type: .heic) {
+                if isHEIFPreferred, ImageEncoders.ImageIO.isSupported(type: .heic) {
                     type = .heic
                 } else {
                     type = .jpeg
