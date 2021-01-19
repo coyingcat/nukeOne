@@ -179,7 +179,7 @@ extension Task {
 
         /// Attaches the subscriber to the task.
         /// - notes: Returns `nil` if the task is already disposed.
-        func subscribe(priority: TaskPriority = .normal, _ observer: @escaping (Event) -> Void) -> TaskSubscription? {
+        func subscribeX(priority: TaskPriority = .normal, _ observer: @escaping (Event) -> Void) -> TaskSubscription? {
             task.subscribe(priority: priority, observer)
         }
 
@@ -187,7 +187,7 @@ extension Task {
         /// andd error events to the given task.
         /// - notes: Returns `nil` if the task is already disposed.
         func subscribe<NewValue>(_ task: Task<NewValue, Error>, onValue: @escaping (Value, Bool, Task<NewValue, Error>) -> Void) -> TaskSubscription? {
-            return subscribe { [weak task] event in
+            return subscribeX{ [weak task] event in
                 guard let task = task else { return }
                 switch event {
                 case let .value(value, isCompleted):
